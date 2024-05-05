@@ -1,6 +1,6 @@
 # Decision Tree Classifier for Predictive Modeling
 
-This repository contains Python code for implementing a Decision Tree classifier for predictive modeling tasks. It includes code for both analyzing datasets and making predictions using decision trees.
+This repository contains Python code for implementing a Decision Tree classifier for predictive modeling tasks. It includes code for both analyzing datasets and making predictions using decision trees. This repository contains a Python script for implementing a decision tree classifier to authenticate banknotes. The dataset used for training and testing the model is provided in the '**BankNote_Authentication.csv**' file.
 
 ## Introduction
 
@@ -8,30 +8,7 @@ Decision Trees are a powerful machine learning algorithm used for both classific
 
 In this project, Decision Tree classifiers are utilized to analyze datasets and make predictions based on their features. The code encompasses various steps of the machine learning pipeline, including data preprocessing, model training, evaluation, and visualization of the decision tree. By leveraging Decision Trees, insights can be extracted from the data, aiding in understanding the underlying patterns and relationships.
 
-## Datasets
-
-### Titanic Dataset
-
-The Titanic dataset contains information about passengers onboard the Titanic, including whether they survived or not. The Titanic dataset contains information about passengers onboard the Titanic, including whether they survived or not. The features include:
-
-- PassengerId: Unique identifier for each passenger
-- Survived: Whether the passenger survived or not (0 = No, 1 = Yes)
-- Pclass: Ticket class (1st, 2nd, or 3rd)
-- Name: Passenger's name
-- Sex: Passenger's gender
-- Age: Passenger's age
-- SibSp: Number of siblings/spouses aboard
-- Parch: Number of parents/children aboard
-- Ticket: Ticket number
-- Fare: Passenger's fare
-- Cabin: Cabin number
-- Embarked: Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
-
-This dataset provides a unique opportunity to analyze the factors influencing survival rates on the Titanic. Insights extracted from the Titanic dataset analysis include:
-
-- **Survival Rate**: Analyzing the survival rate of passengers and identifying factors such as gender, age, and passenger class that influenced survival.
-- **Gender Disparity**: Investigating the gender disparity in survival rates and understanding the role of gender in determining survival probability.
-- **Passenger Class**: Exploring the impact of passenger class on survival and comparing survival rates across different classes.
+## Dataset
 
 ### Banknote Authentication Dataset
 
@@ -53,9 +30,29 @@ This dataset aims to predict whether a banknote is genuine or forged based on it
 
 The repository includes the following Python code:
 
-1. **Decision Tree Classifier**: This code implements a Decision Tree classifier using the scikit-learn library. It encompasses steps for data preprocessing, model training, evaluation, and visualization of the decision tree.
+- **Decision Tree Classifier**: This code implements a Decision Tree classifier using the scikit-learn library. It encompasses steps for data preprocessing, model training, evaluation, and visualization of the decision tree.
 
-2. **Exploratory Data Analysis (EDA)**: This code performs exploratory data analysis on the dataset, including data cleaning, visualization of key features, and analysis of relationships between variables. The EDA process provides insights into the dataset and helps identify patterns and trends that can inform the modeling process.
+**Description**:
+
+- Importing Libraries:
+  - pandas: For data manipulation and analysis.
+  - pylab, matplotlib.pyplot: For plotting graphs and visualizations.
+  - seaborn: For enhancing the visualizations.
+  - sklearn: For machine learning algorithms and evaluation metrics.
+- Loading Data:
+  - The script loads the banknote authentication dataset using pandas and separates the features (X) and the target variable (Y).
+- Splitting Data:
+  - The dataset is split into training and test sets using train_test_split from sklearn.
+- Decision Tree Model:
+  - A decision tree classifier is instantiated with the criterion set to 'entropy'.
+- Model Training:
+  - The decision tree model is trained on the training dataset.
+- Model Evaluation:
+  - The trained model is used to make predictions on the test dataset.
+  - Confusion matrix and classification report are computed using confusion_matrix and classification_report from sklearn.
+- Visualization:
+  - Confusion matrix is visualized as a heatmap using seaborn.
+  - Decision tree is visualized using plot_tree from sklearn.
 
 ## Dependencies
 
@@ -93,8 +90,9 @@ cd decision-tree-classifier
 
 ## Results
 
-The code produces the following results:
+The code produces the following result:
 
 - **Decision Tree Classifier**: The code trains a Decision Tree classifier on the dataset and evaluates its performance using metrics such as accuracy, precision, recall, and F1-score. The decision tree visualization provides insights into the decision-making process of the classifier.
-
-- **Exploratory Data Analysis (EDA)**: The code provides insights into the dataset through visualizations and statistical analysis, helping understand the relationships between variables and identifying patterns that can inform the modeling process.
+- Confusion Matrix: Provides insight into the performance of the model in terms of true positives, false positives, true negatives, and false negatives.
+- Classification Report: Displays precision, recall, F1-score, and support for each class.
+- Decision Tree Visualization: Offers a graphical representation of the decision tree model.
