@@ -14,18 +14,18 @@ In this project, Decision Tree classifiers are utilized to analyze datasets and 
 
 The Titanic dataset contains information about passengers onboard the Titanic, including whether they survived or not. The Titanic dataset contains information about passengers onboard the Titanic, including whether they survived or not. The features include:
 
-PassengerId: Unique identifier for each passenger
-Survived: Whether the passenger survived or not (0 = No, 1 = Yes)
-Pclass: Ticket class (1st, 2nd, or 3rd)
-Name: Passenger's name
-Sex: Passenger's gender
-Age: Passenger's age
-SibSp: Number of siblings/spouses aboard
-Parch: Number of parents/children aboard
-Ticket: Ticket number
-Fare: Passenger's fare
-Cabin: Cabin number
-Embarked: Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
+- PassengerId: Unique identifier for each passenger
+- Survived: Whether the passenger survived or not (0 = No, 1 = Yes)
+- Pclass: Ticket class (1st, 2nd, or 3rd)
+- Name: Passenger's name
+- Sex: Passenger's gender
+- Age: Passenger's age
+- SibSp: Number of siblings/spouses aboard
+- Parch: Number of parents/children aboard
+- Ticket: Ticket number
+- Fare: Passenger's fare
+- Cabin: Cabin number
+- Embarked: Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
 
 This dataset provides a unique opportunity to analyze the factors influencing survival rates on the Titanic. Insights extracted from the Titanic dataset analysis include:
 
@@ -37,11 +37,11 @@ This dataset provides a unique opportunity to analyze the factors influencing su
 
 The Banknote Authentication dataset contains features extracted from photographic images of genuine and forged banknotes. The Banknote Authentication dataset contains features extracted from photographic images of genuine and forged banknotes. The features include:
 
-Variance of Wavelet Transformed Image
-Skewness of Wavelet Transformed Image
-Kurtosis of Wavelet Transformed Image
-Entropy of Image
-Class: Whether the banknote is genuine or forged (0 = Genuine, 1 = Forged)
+- Variance of Wavelet Transformed Image
+- Skewness of Wavelet Transformed Image
+- Kurtosis of Wavelet Transformed Image
+- Entropy of Image
+- Class: Whether the banknote is genuine or forged (0 = Genuine, 1 = Forged)
 
 This dataset aims to predict whether a banknote is genuine or forged based on its features. Insights derived from the Banknote Authentication dataset analysis include:
 
