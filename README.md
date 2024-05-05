@@ -85,7 +85,7 @@ git clone https://github.com/ujjwol112/decision-tree-classifier.git
 cd decision-tree-classifier
 ```
 
-3. Ensure that the dataset files (`titanic.csv` and `banknote_authentication.csv`) are placed in the same directory.
+3. Ensure that the dataset file `banknote_authentication.csv` is placed in the same directory.
 
 
 ## Results
